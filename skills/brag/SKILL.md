@@ -115,6 +115,8 @@ When music is selected, include a compact `Music cue guidance` section: read the
 
 Write the composition brief and use Hyperframes to create the video implementation in `<output-dir>/composition/`.
 
+Resolve one Hyperframes CLI version before the first command here and reuse it for the rest of the run (see [references/step-4-deliver.md](references/step-4-deliver.md)).
+
 `/brag` owns the product angle, source material, storyboard, tone, format, audio selection, music cue guidance, and delivery expectations. Hyperframes owns the concrete composition structure, exact animation timing, animation mechanics, runtime choices, linting rules, and render workflow.
 
 **Gate:** `npx hyperframes check` passes with zero errors inside `<output-dir>/composition/` (the single browser gate before render — see hyperframes-cli for what it audits).

@@ -1,5 +1,9 @@
 # Step 4: Validate, render, and deliver
 
+## Pin the Hyperframes CLI version
+
+A bare `npx hyperframes ...` resolves whatever version is newest on npm at run time, which can pull a different CLI and bundled Chromium mid-run. Pin one version at the start of the run and use it for every Hyperframes command (`check`, `snapshot`, `preview`, `render`, `beats`, `tts`) so they all agree, using the form `npx hyperframes@<version> ...`. Resolve the version once, before the first Hyperframes command in step 3, with `npx hyperframes@latest --version`, then reuse that exact version for every command after it. Pinning per run still picks up the newest CLI on the next run, it only stops the version from changing underneath a run in progress.
+
 ## Validate
 
 ```bash
